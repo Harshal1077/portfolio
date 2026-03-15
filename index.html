@@ -3,38 +3,201 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Harshal Raut | Portfolio</title>
+  <title>Harshal Raut</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <nav id="navbar">
-    <div class="nav-inner">
-      <a href="#" class="nav-logo">harshal@portfolio:~$</a>
-      <ul class="nav-links">
-        <li><a href="#about">about</a></li>
-        <li><a href="#skills">skills</a></li>
-        <li><a href="#projects">projects</a></li>
-        <li><a href="#education">education</a></li>
-        <li><a href="#contact">contact</a></li>
-      </ul>
-    </div>
+  <nav>
+    <span class="nav-name">Harshal Raut</span>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
   </nav>
 
-  <!-- HERO -->
   <section id="hero">
-    <div class="hero-content">
-      <p class="hero-line1">// AI & Machine Learning Engineer</p>
-      <h1>Harshal<br><span>Raut</span></h1>
-      <p class="hero-desc">
-        3rd year B.E. Computer Science student building AI/ML systems
-        that work in the real world. Targeting BPF internships and
-        planning an MS abroad.
-      </p>
-      <div class="hero-btns">
-        <a href="#projects" class="btn-fill">View Projects</a>
+    <p class="tag">AI & ML Engineer · Palghar, India</p>
+    <h1>Hi, I'm Harshal Raut</h1>
+    <p class="sub">
+      3rd year Computer Science student at SJCEM specializing in 
+      AI and Machine Learning. I build systems that solve real problems.
+    </p>
+    <div class="hero-links">
+      <a href="#projects">View Projects</a>
+      <a href="#contact" class="ghost">Get in Touch</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="about-grid">
+      <div>
+        <p>
+          I'm a Computer Engineering student at <strong>St. John College of 
+          Engineering and Management, Palghar</strong> with a focus on 
+          Artificial Intelligence and Machine Learning.
+        </p>
+        <p>
+          I've built a water demand forecasting system, a nutrition AI tool, 
+          and a document verification system. I care about building things 
+          that work in the real world, not just on paper.
+        </p>
+        <p>
+          Currently looking for <strong>AI/ML internships</strong> and 
+          planning to pursue a <strong>Master's degree abroad</strong> 
+          after graduation.
+        </p>
+      </div>
+      <div class="about-details">
+        <div class="detail-row">
+          <span>College</span>
+          <strong>SJCEM, Palghar</strong>
+        </div>
+        <div class="detail-row">
+          <span>Degree</span>
+          <strong>B.E. Computer Science</strong>
+        </div>
+        <div class="detail-row">
+          <span>Year</span>
+          <strong>3rd Year</strong>
+        </div>
+        <div class="detail-row">
+          <span>Focus</span>
+          <strong>AI / ML</strong>
+        </div>
+        <div class="detail-row">
+          <span>Goal</span>
+          <strong>Internship + MS Abroad</strong>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-list">
+
+      <div class="skill-row">
+        <span class="skill-name">AI / ML</span>
+        <div class="skill-tags">
+          <span>Python</span><span>TensorFlow</span><span>Scikit-learn</span>
+          <span>Pandas</span><span>NumPy</span><span>Deep Learning</span>
+          <span>Time-Series</span>
+        </div>
+      </div>
+
+      <div class="skill-row">
+        <span class="skill-name">Web Dev</span>
+        <div class="skill-tags">
+          <span>Angular</span><span>TypeScript</span>
+          <span>JavaScript</span><span>HTML</span><span>CSS</span>
+        </div>
+      </div>
+
+      <div class="skill-row">
+        <span class="skill-name">Languages</span>
+        <div class="skill-tags">
+          <span>Python</span><span>Java</span>
+          <span>C++</span><span>C#</span>
+        </div>
+      </div>
+
+      <div class="skill-row">
+        <span class="skill-name">Tools</span>
+        <div class="skill-tags">
+          <span>Git</span><span>GitHub</span><span>VS Code</span>
+          <span>Unity</span><span>Linux</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-list">
+
+      <div class="project">
+        <div class="project-header">
+          <h3>Urban Water Intelligence</h3>
+          <span class="badge">Active</span>
+        </div>
+        <p>AI/ML system that forecasts urban water demand using time-series modelling. Helps plan infrastructure using data-driven predictions.</p>
+        <div class="project-tags">
+          <span>Python</span><span>LSTM</span><span>Pandas</span><span>Scikit-learn</span>
+        </div>
+        <a href="#" class="project-link">View on GitHub →</a>
+      </div>
+
+      <div class="project">
+        <div class="project-header">
+          <h3>Nutri AI</h3>
+          <span class="badge">Active</span>
+        </div>
+        <p>AI nutrition analysis tool that processes dietary input and gives personalised health insights using ML and NLP.</p>
+        <div class="project-tags">
+          <span>Python</span><span>NLP</span><span>ML</span>
+        </div>
+        <a href="#" class="project-link">View on GitHub →</a>
+      </div>
+
+      <div class="project">
+        <div class="project-header">
+          <h3>Document Verification System</h3>
+        </div>
+        <p>System that automatically understands and verifies uploaded documents using machine learning techniques.</p>
+        <div class="project-tags">
+          <span>Python</span><span>OCR</span><span>NLP</span>
+        </div>
+        <a href="#" class="project-link">View on GitHub →</a>
+      </div>
+
+      <div class="project">
+        <div class="project-header">
+          <h3>Angular Auth System</h3>
+        </div>
+        <p>Secure login system with JWT sessions, form validation and protected routing built in Angular and TypeScript.</p>
+        <div class="project-tags">
+          <span>Angular</span><span>TypeScript</span><span>JWT</span>
+        </div>
+        <a href="#" class="project-link">View on GitHub →</a>
+      </div>
+
+      <div class="project">
+        <div class="project-header">
+          <h3>Unity Roller Coaster Sim</h3>
+        </div>
+        <p>Physics-based roller coaster in Unity demonstrating motion dynamics and 3D environment interaction.</p>
+        <div class="project-tags">
+          <span>Unity</span><span>C#</span><span>Physics</span>
+        </div>
+        <a href="#" class="project-link">View on GitHub →</a>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Get in Touch</h2>
+    <p class="contact-sub">Open to internships and collaborations. I usually reply within a day.</p>
+    <div class="contact-list">
+      <a href="mailto:your@email.com">your@email.com</a>
+      <a href="https://github.com/harshal1077" target="_blank">github.com/harshal1077</a>
+      <a href="https://linkedin.com/in/yourlinkedin" target="_blank">linkedin.com/in/yourlinkedin</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Harshal Raut</p>
+  </footer>
+
+</body>
+</html>        <a href="#projects" class="btn-fill">View Projects</a>
         <a href="#contact" class="btn-outline">Contact Me</a>
       </div>
       <div class="hero-stats">
