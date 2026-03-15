@@ -1,40 +1,338 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Harshal Raut</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
 
-  <div class="bg-orb orb1"></div>
-  <div class="bg-orb orb2"></div>
-  <div class="bg-orb orb3"></div>
+:root {
+  --bg:       #0e0e12;
+  --bg2:      #16161c;
+  --border:   #2a2a35;
+  --text:     #ececf0;
+  --soft:     #8888a0;
+  --accent:   #6c63ff;
+  --accent2:  #30d5c8;
+  --tag:      #1e1e28;
+}
 
-  <!-- NAV -->
-  <nav>
-    <div class="nav-inner">
-      <span class="nav-name">Harshal Raut</span>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
 
-  <!-- HERO -->
-  <section id="hero">
-    <div class="hero-inner">
-      <p class="eyebrow">AI & ML Engineer · Palghar, India</p>
-      <h1>Hi, I'm<br><span>Harshal Raut</span></h1>
-      <p class="sub">
-        3rd year Computer Science student at SJCEM. I build 
+/* NAV */
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.1rem 6vw;
+  background: rgba(14,14,18,0.85);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--border);
+}
+
+.logo {
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--text);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+nav ul a {
+  color: var(--soft);
+  text-decoration: none;
+  font-size: 0.875rem;
+  transition: color 0.2s;
+}
+
+nav ul a:hover { color: var(--text); }
+
+/* HERO */
+#hero {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 4rem 6vw;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.eyebrow {
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent2);
+  margin-bottom: 1.25rem;
+}
+
+#hero h1 {
+  font-size: clamp(2.8rem, 7vw, 5rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  margin-bottom: 1.25rem;
+}
+
+#hero h1 span {
+  background: linear-gradient(135deg, var(--accent), var(--accent2));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-sub {
+  font-size: 1rem;
+  color: var(--soft);
+  max-width: 460px;
+  line-height: 1.8;
+  margin-bottom: 2.5rem;
+}
+
+.hero-btns {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn-primary {
+  padding: 0.7rem 1.6rem;
+  background: var(--accent);
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 10px;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.btn-primary:hover { opacity: 0.85; transform: translateY(-1px); }
+
+.btn-secondary {
+  padding: 0.7rem 1.6rem;
+  background: var(--bg2);
+  color: var(--text);
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.btn-secondary:hover { border-color: var(--accent); transform: translateY(-1px); }
+
+/* SECTIONS */
+section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 5rem 6vw;
+  border-top: 1px solid var(--border);
+}
+
+section h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 2rem;
+  color: var(--text);
+}
+
+/* CARD */
+.card {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 1.75rem;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.card:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+
+/* ABOUT */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+}
+
+.about-grid p {
+  color: var(--soft);
+  font-size: 0.925rem;
+  margin-bottom: 0.9rem;
+}
+
+.about-grid p strong { color: var(--text); }
+
+.info-card { padding: 0; overflow: hidden; }
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.8rem 1.5rem;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.875rem;
+}
+
+.info-row:last-child { border-bottom: none; }
+.info-row span { color: var(--soft); }
+.info-row strong { color: var(--text); font-weight: 500; }
+
+/* SKILLS */
+.skills-list {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.skill-row {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.skill-row:last-child { border-bottom: none; }
+
+.skill-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text);
+  min-width: 85px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.tags span {
+  font-size: 0.75rem;
+  padding: 0.25rem 0.7rem;
+  background: var(--tag);
+  color: var(--soft);
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.tags span:hover {
+  color: var(--accent2);
+  border-color: var(--accent2);
+}
+
+/* PROJECTS */
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.p-tag {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent2);
+}
+
+.project-card h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.project-card p {
+  font-size: 0.875rem;
+  color: var(--soft);
+  line-height: 1.7;
+  flex: 1;
+}
+
+.p-link {
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--accent);
+  text-decoration: none;
+  margin-top: 0.25rem;
+  transition: color 0.2s;
+}
+
+.p-link:hover { color: var(--accent2); }
+
+/* CONTACT */
+.contact-sub {
+  color: var(--soft);
+  font-size: 0.925rem;
+  margin-bottom: 1.5rem;
+  margin-top: -1rem;
+}
+
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.contact-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  color: var(--text);
+}
+
+.c-label {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--soft);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  min-width: 80px;
+}
+
+.c-val {
+  font-size: 0.9rem;
+  color: var(--text);
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.8rem;
+  color: var(--soft);
+  border-top: 1px solid var(--border);
+}
+
+/* RESPONSIVE */
+@media (max-width: 640px) {
+  nav ul { display: none; }
+  .about-grid { grid-template-columns: 1fr; }
+  .projects-grid { grid-template-columns: 1fr; }
+  .skill-row { flex-direction: column; align-items: flex-start; gap: 0.5rem; }
+}        3rd year Computer Science student at SJCEM. I build 
         AI and ML systems that solve real problems.
       </p>
       <div class="hero-btns">
