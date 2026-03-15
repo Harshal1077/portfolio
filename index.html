@@ -1,151 +1,354 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Harshal Raut | Portfolio</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harshal Raut | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<header>
-<h1>Harshal Raut</h1>
-<p>Computer Engineering Student | Web Developer | AI Enthusiast</p>
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">harshal@portfolio:~$</a>
+      <ul class="nav-links">
+        <li><a href="#about">about</a></li>
+        <li><a href="#skills">skills</a></li>
+        <li><a href="#projects">projects</a></li>
+        <li><a href="#education">education</a></li>
+        <li><a href="#contact">contact</a></li>
+      </ul>
+    </div>
+  </nav>
 
-<nav>
-<a href="#about">About</a>
-<a href="#skills">Skills</a>
-<a href="#projects">Projects</a>
-<a href="#education">Education</a>
-<a href="#contact">Contact</a>
-</nav>
-</header>
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-content">
+      <p class="hero-line1">// AI & Machine Learning Engineer</p>
+      <h1>Harshal<br><span>Raut</span></h1>
+      <p class="hero-desc">
+        3rd year B.E. Computer Science student building AI/ML systems
+        that work in the real world. Targeting BPF internships and
+        planning an MS abroad.
+      </p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn-fill">View Projects</a>
+        <a href="#contact" class="btn-outline">Contact Me</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-n">5+</span>
+          <span class="stat-l">Projects</span>
+        </div>
+        <div class="stat-sep"></div>
+        <div class="stat">
+          <span class="stat-n">AI/ML</span>
+          <span class="stat-l">Specialization</span>
+        </div>
+        <div class="stat-sep"></div>
+        <div class="stat">
+          <span class="stat-n">BPF</span>
+          <span class="stat-l">Internship Target</span>
+        </div>
+      </div>
+    </div>
 
+    <div class="hero-terminal">
+      <div class="terminal-bar">
+        <span class="t-dot red"></span>
+        <span class="t-dot yellow"></span>
+        <span class="t-dot green"></span>
+        <span class="t-title">harshal.py</span>
+      </div>
+      <div class="terminal-body">
+<pre><span class="t-blue">class</span> <span class="t-yellow">HarshalRaut</span>:
+  <span class="t-green">name</span>    = <span class="t-str">"Harshal Raut"</span>
+  <span class="t-green">role</span>    = <span class="t-str">"AI/ML Engineer"</span>
+  <span class="t-green">year</span>    = <span class="t-str">"3rd Year B.E. CS"</span>
+  <span class="t-green">college</span> = <span class="t-str">"SJCEM, Palghar"</span>
+  <span class="t-green">skills</span>  = [
+    <span class="t-str">"Python"</span>, <span class="t-str">"ML"</span>,
+    <span class="t-str">"TensorFlow"</span>, <span class="t-str">"Angular"</span>
+  ]
+  <span class="t-green">goal</span>    = <span class="t-str">"MS Abroad + BPF Intern"</span>
 
-<section id="about">
-<h2>About Me</h2>
-<p>
-I am a Computer Engineering student passionate about building web applications,
-AI-based systems and exploring cloud technologies. I enjoy solving technical
-problems and developing practical software projects.
-</p>
+<span class="t-blue">def</span> <span class="t-yellow">hire_me</span>():
+  <span class="t-blue">return</span> <span class="t-str">"Let's build something great"</span>
+<span class="t-cursor">▌</span></pre>
+      </div>
+    </div>
+  </section>
 
-<p>
-My interests include Artificial Intelligence, Web Development, Cloud Computing,
-and Software Engineering.
-</p>
-</section>
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-inner">
+      <div class="sec-label">// 01. about_me</div>
+      <div class="about-grid">
+        <div class="about-text">
+          <h2 class="sec-heading">About Me</h2>
+          <p>
+            I'm a Computer Engineering student at <strong>St. John College of Engineering
+            and Management, Palghar</strong>, specializing in AI and Machine Learning.
+          </p>
+          <p>
+            I build systems at the edge of research and real-world use — a water demand
+            forecasting engine, a nutritional AI tool, document verification systems.
+            I care about whether something works under messy real conditions, not just
+            on a clean dataset.
+          </p>
+          <p>
+            Currently targeting <strong>AI/ML internships (BPF track)</strong> and building
+            toward a <strong>Master's degree abroad</strong> after graduation.
+          </p>
+        </div>
+        <div class="about-info">
+          <div class="info-row">
+            <span class="info-key">$ name</span>
+            <span class="info-val">Harshal Raut</span>
+          </div>
+          <div class="info-row">
+            <span class="info-key">$ location</span>
+            <span class="info-val">Palghar, Maharashtra</span>
+          </div>
+          <div class="info-row">
+            <span class="info-key">$ degree</span>
+            <span class="info-val">B.E. Computer Science</span>
+          </div>
+          <div class="info-row">
+            <span class="info-key">$ year</span>
+            <span class="info-val">3rd Year (2022–Present)</span>
+          </div>
+          <div class="info-row">
+            <span class="info-key">$ focus</span>
+            <span class="info-val">AI / ML Systems</span>
+          </div>
+          <div class="info-row">
+            <span class="info-key">$ target</span>
+            <span class="info-val">BPF Internship + MS Abroad</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="section-inner">
+      <div class="sec-label">// 02. skills</div>
+      <h2 class="sec-heading">Technical Stack</h2>
+      <div class="skills-grid">
 
-<section id="skills">
-<h2>Skills</h2>
+        <div class="skill-card">
+          <h3>AI / Machine Learning</h3>
+          <div class="tag-row">
+            <span>Python</span><span>Scikit-learn</span><span>TensorFlow</span>
+            <span>Pandas</span><span>NumPy</span><span>LSTM</span>
+            <span>Time-Series</span><span>Deep Learning</span>
+          </div>
+        </div>
 
-<div class="skill-box">
-<h3>Programming</h3>
-<ul>
-<li>Java</li>
-<li>Python</li>
-<li>JavaScript</li>
-<li>C++</li>
-</ul>
-</div>
+        <div class="skill-card">
+          <h3>Web Development</h3>
+          <div class="tag-row">
+            <span>Angular</span><span>TypeScript</span><span>JavaScript</span>
+            <span>HTML</span><span>CSS</span><span>REST APIs</span>
+          </div>
+        </div>
 
-<div class="skill-box">
-<h3>Web Development</h3>
-<ul>
-<li>HTML</li>
-<li>CSS</li>
-<li>Angular</li>
-<li>TypeScript</li>
-</ul>
-</div>
+        <div class="skill-card">
+          <h3>Languages</h3>
+          <div class="tag-row">
+            <span>Python</span><span>Java</span><span>C++</span>
+            <span>TypeScript</span><span>JavaScript</span><span>C#</span>
+          </div>
+        </div>
 
-<div class="skill-box">
-<h3>Tools</h3>
-<ul>
-<li>Git</li>
-<li>VS Code</li>
-<li>Unity</li>
-</ul>
-</div>
+        <div class="skill-card">
+          <h3>Networking & Cloud</h3>
+          <div class="tag-row">
+            <span>TCP/IP</span><span>ARP / ICMP</span><span>Dijkstra's</span>
+            <span>Cloud Arch.</span><span>QoS</span><span>Routing</span>
+          </div>
+        </div>
 
-</section>
+        <div class="skill-card">
+          <h3>Tools</h3>
+          <div class="tag-row">
+            <span>Git</span><span>GitHub</span><span>VS Code</span>
+            <span>Unity</span><span>Linux</span><span>Jupyter</span>
+          </div>
+        </div>
 
+        <div class="skill-card">
+          <h3>Data Science</h3>
+          <div class="tag-row">
+            <span>Matplotlib</span><span>Seaborn</span><span>Feature Eng.</span>
+            <span>EDA</span><span>Forecasting</span><span>Statistics</span>
+          </div>
+        </div>
 
-<section id="projects">
+      </div>
+    </div>
+  </section>
 
-<h2>Projects</h2>
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="section-inner">
+      <div class="sec-label">// 03. projects</div>
+      <h2 class="sec-heading">Things I've Built</h2>
+      <div class="projects-grid">
 
-<div class="project">
-<h3>AI-Powered Document Understanding and Verification System</h3>
-<p>
-A research based AI system that automatically understands and verifies
-uploaded documents using machine learning techniques.
-</p>
-</div>
+        <div class="project-card hot">
+          <div class="proj-top">
+            <span class="proj-type">AI · Forecasting</span>
+            <span class="proj-badge">Active</span>
+          </div>
+          <h3>Urban Water Intelligence</h3>
+          <p>AI/ML system forecasting urban water demand using time-series models. Helps municipalities plan infrastructure using data-driven predictions.</p>
+          <div class="proj-tags">
+            <code>Python</code><code>LSTM</code><code>Pandas</code>
+            <code>Scikit-learn</code><code>Time-Series</code>
+          </div>
+          <a href="#" class="proj-link">View Project →</a>
+        </div>
 
-<div class="project">
-<h3>Unity Roller Coaster Simulation</h3>
-<p>
-A physics-based roller coaster simulation created using Unity to demonstrate
-motion dynamics and 3D environment interaction.
-</p>
-</div>
+        <div class="project-card hot">
+          <div class="proj-top">
+            <span class="proj-type">AI · Health</span>
+            <span class="proj-badge">Active</span>
+          </div>
+          <h3>Nutri AI</h3>
+          <p>AI-driven nutritional analysis tool using ML classification and NLP to turn dietary input into actionable health insights.</p>
+          <div class="proj-tags">
+            <code>Python</code><code>NLP</code><code>ML</code><code>Data Analysis</code>
+          </div>
+          <a href="#" class="proj-link">View Project →</a>
+        </div>
 
-<div class="project">
-<h3>Angular Login System</h3>
-<p>
-A web authentication system created using Angular that allows users
-to log in through a secure login form.
-</p>
-</div>
+        <div class="project-card">
+          <div class="proj-top">
+            <span class="proj-type">AI · Research</span>
+          </div>
+          <h3>Document Verification System</h3>
+          <p>Research-backed system that automatically understands and verifies uploaded documents using ML, reducing manual review.</p>
+          <div class="proj-tags">
+            <code>Python</code><code>OCR</code><code>NLP</code><code>ML</code>
+          </div>
+          <a href="#" class="proj-link">View Project →</a>
+        </div>
 
-<div class="project">
-<h3>Networking and Cloud Computing Coursework</h3>
-<p>
-Studied concepts like TCP/IP, Routing Algorithms, ARP, ICMP,
-Cloud Computing architecture and algorithms.
-</p>
-</div>
+        <div class="project-card">
+          <div class="proj-top">
+            <span class="proj-type">Web · Auth</span>
+          </div>
+          <h3>Angular Auth System</h3>
+          <p>Secure login system with JWT-based session management, form validation and protected routing built in Angular + TypeScript.</p>
+          <div class="proj-tags">
+            <code>Angular</code><code>TypeScript</code><code>JWT</code>
+          </div>
+          <a href="#" class="proj-link">View Project →</a>
+        </div>
 
-</section>
+        <div class="project-card">
+          <div class="proj-top">
+            <span class="proj-type">Simulation · 3D</span>
+          </div>
+          <h3>Unity Roller Coaster Sim</h3>
+          <p>Physics-based roller coaster in Unity showing real-world motion dynamics and 3D environment interaction.</p>
+          <div class="proj-tags">
+            <code>Unity</code><code>C#</code><code>Physics</code>
+          </div>
+          <a href="#" class="proj-link">View Project →</a>
+        </div>
 
+      </div>
+    </div>
+  </section>
 
-<section id="education">
-<h2>Education</h2>
+  <!-- EDUCATION -->
+  <section id="education">
+    <div class="section-inner">
+      <div class="sec-label">// 04. education</div>
+      <h2 class="sec-heading">Academic Background</h2>
+      <div class="edu-list">
 
-<p>
-Bachelor of Engineering (Computer Engineering)  
-Currently in 2nd Year
-</p>
+        <div class="edu-card">
+          <div class="edu-year">2022 — Present</div>
+          <div class="edu-info">
+            <h3>B.E. Computer Science</h3>
+            <p class="edu-school">St. John College of Engineering and Management, Palghar</p>
+            <p class="edu-note">Specialization in AI/ML. Coursework covers deep learning, algorithms, networking, cloud computing and data structures.</p>
+            <div class="tag-row">
+              <span>Algorithms</span><span>Computer Networks</span>
+              <span>Deep Learning</span><span>Cloud Computing</span>
+            </div>
+          </div>
+        </div>
 
-<p>
-Key Subjects:
-</p>
+        <div class="edu-card upcoming">
+          <div class="edu-year">2026–27 ↗</div>
+          <div class="edu-info">
+            <h3>Master's in AI / ML</h3>
+            <p class="edu-school">Target: International University (Abroad)</p>
+            <p class="edu-note">Planning a research-focused MS in ML systems or AI engineering. Building a competitive profile through projects and internships.</p>
+            <div class="tag-row">
+              <span>Research Track</span><span>MS Preparation</span><span>BPF Internship</span>
+            </div>
+          </div>
+        </div>
 
-<ul>
-<li>Computer Networks</li>
-<li>Cloud Computing</li>
-<li>Analysis of Algorithms</li>
-<li>Deep Learning Fundamentals</li>
-</ul>
+      </div>
+    </div>
+  </section>
 
-</section>
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="section-inner">
+      <div class="sec-label">// 05. contact</div>
+      <div class="contact-wrap">
+        <div class="contact-left">
+          <h2 class="sec-heading">Let's Talk</h2>
+          <p>Open to AI/ML internships, research roles and interesting collaborations. I reply within a day.</p>
+          <div class="avail">
+            <span class="avail-dot"></span> Available for internships now
+          </div>
+        </div>
+        <div class="contact-links">
+          <a href="mailto:your@email.com" class="c-link">
+            <span class="c-key">email</span>
+            <span class="c-val">your@email.com</span>
+          </a>
+          <a href="https://github.com/harshal1077" target="_blank" class="c-link">
+            <span class="c-key">github</span>
+            <span class="c-val">github.com/harshal1077</span>
+          </a>
+          <a href="https://linkedin.com/in/yourlinkedin" target="_blank" class="c-link">
+            <span class="c-key">linkedin</span>
+            <span class="c-val">linkedin.com/in/yourlinkedin</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <footer>
+    <p>© 2026 Harshal Raut &nbsp;·&nbsp; Built with HTML, CSS & a lot of coffee</p>
+  </footer>
 
-<section id="contact">
-<h2>Contact</h2>
-
-<p>Email: yourmail@gmail.com</p>
-<p>GitHub: github.com/yourgithub</p>
-<p>LinkedIn: linkedin.com/in/yourlinkedin</p>
-
-</section>
-
-
-<footer>
-<p>© 2026 Harshal Raut</p>
-</footer>
+  <script>
+    const nav = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 50);
+    });
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.anim').forEach(el => io.observe(el));
+  </script>
 
 </body>
 </html>
