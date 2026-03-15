@@ -5,36 +5,234 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Harshal Raut</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+  <div class="bg-orb orb1"></div>
+  <div class="bg-orb orb2"></div>
+  <div class="bg-orb orb3"></div>
+
+  <!-- NAV -->
   <nav>
-    <span class="nav-name">Harshal Raut</span>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
+    <div class="nav-inner">
+      <span class="nav-name">Harshal Raut</span>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
   </nav>
 
+  <!-- HERO -->
   <section id="hero">
-    <p class="tag">AI & ML Engineer · Palghar, India</p>
-    <h1>Hi, I'm Harshal Raut</h1>
-    <p class="sub">
-      3rd year Computer Science student at SJCEM specializing in 
-      AI and Machine Learning. I build systems that solve real problems.
-    </p>
-    <div class="hero-links">
-      <a href="#projects">View Projects</a>
-      <a href="#contact" class="ghost">Get in Touch</a>
+    <div class="hero-inner">
+      <p class="eyebrow">AI & ML Engineer · Palghar, India</p>
+      <h1>Hi, I'm<br><span>Harshal Raut</span></h1>
+      <p class="sub">
+        3rd year Computer Science student at SJCEM. I build 
+        AI and ML systems that solve real problems.
+      </p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn-solid">View Projects</a>
+        <a href="#contact" class="btn-glass">Get in Touch</a>
+      </div>
     </div>
   </section>
 
+  <!-- ABOUT -->
   <section id="about">
-    <h2>About Me</h2>
+    <p class="section-label">About</p>
+    <h2>Who I Am</h2>
+    <div class="about-grid">
+      <div class="glass-card about-text">
+        <p>I'm a Computer Engineering student at <strong>St. John College of Engineering and Management, Palghar</strong> specializing in AI and Machine Learning.</p>
+        <p>I've built a water demand forecasting system, a nutrition AI tool, and a document verification system. I care about things that work in the real world.</p>
+        <p>Looking for <strong>AI/ML internships</strong> and planning a <strong>Master's abroad</strong> after graduation.</p>
+      </div>
+      <div class="about-stats">
+        <div class="stat-card glass-card">
+          <span class="stat-num">3rd</span>
+          <span class="stat-label">Year B.E.</span>
+        </div>
+        <div class="stat-card glass-card">
+          <span class="stat-num">5+</span>
+          <span class="stat-label">Projects</span>
+        </div>
+        <div class="stat-card glass-card">
+          <span class="stat-num">AI</span>
+          <span class="stat-label">Specialization</span>
+        </div>
+        <div class="stat-card glass-card">
+          <span class="stat-num">MS</span>
+          <span class="stat-label">Goal Abroad</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <p class="section-label">Skills</p>
+    <h2>Technical Stack</h2>
+    <div class="skills-grid">
+
+      <div class="glass-card skill-card">
+        <h3>AI / Machine Learning</h3>
+        <div class="tags">
+          <span>Python</span><span>TensorFlow</span><span>Scikit-learn</span>
+          <span>Pandas</span><span>NumPy</span><span>Deep Learning</span>
+          <span>Time-Series</span><span>LSTM</span>
+        </div>
+      </div>
+
+      <div class="glass-card skill-card">
+        <h3>Web Development</h3>
+        <div class="tags">
+          <span>Angular</span><span>TypeScript</span>
+          <span>JavaScript</span><span>HTML</span><span>CSS</span>
+          <span>REST APIs</span>
+        </div>
+      </div>
+
+      <div class="glass-card skill-card">
+        <h3>Languages</h3>
+        <div class="tags">
+          <span>Python</span><span>Java</span>
+          <span>C++</span><span>TypeScript</span><span>C#</span>
+        </div>
+      </div>
+
+      <div class="glass-card skill-card">
+        <h3>Tools & Cloud</h3>
+        <div class="tags">
+          <span>Git</span><span>GitHub</span><span>VS Code</span>
+          <span>Unity</span><span>Linux</span><span>Jupyter</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <p class="section-label">Projects</p>
+    <h2>Things I've Built</h2>
+    <div class="projects-grid">
+
+      <div class="glass-card project-card">
+        <div class="proj-top">
+          <span class="proj-cat">AI · Forecasting</span>
+          <span class="proj-live">Active</span>
+        </div>
+        <h3>Urban Water Intelligence</h3>
+        <p>AI/ML system forecasting urban water demand using time-series modelling. Helps municipalities plan infrastructure with data-driven predictions.</p>
+        <div class="tags">
+          <span>Python</span><span>LSTM</span><span>Pandas</span><span>Scikit-learn</span>
+        </div>
+        <a href="#" class="proj-link">View on GitHub →</a>
+      </div>
+
+      <div class="glass-card project-card">
+        <div class="proj-top">
+          <span class="proj-cat">AI · Health</span>
+          <span class="proj-live">Active</span>
+        </div>
+        <h3>Nutri AI</h3>
+        <p>AI nutrition analysis tool using ML and NLP to turn dietary input into personalised health insights.</p>
+        <div class="tags">
+          <span>Python</span><span>NLP</span><span>ML</span>
+        </div>
+        <a href="#" class="proj-link">View on GitHub →</a>
+      </div>
+
+      <div class="glass-card project-card">
+        <div class="proj-top">
+          <span class="proj-cat">AI · Research</span>
+        </div>
+        <h3>Document Verification System</h3>
+        <p>System that automatically understands and verifies uploaded documents using machine learning.</p>
+        <div class="tags">
+          <span>Python</span><span>OCR</span><span>NLP</span>
+        </div>
+        <a href="#" class="proj-link">View on GitHub →</a>
+      </div>
+
+      <div class="glass-card project-card">
+        <div class="proj-top">
+          <span class="proj-cat">Web · Auth</span>
+        </div>
+        <h3>Angular Auth System</h3>
+        <p>Secure login with JWT sessions, form validation and protected routing in Angular and TypeScript.</p>
+        <div class="tags">
+          <span>Angular</span><span>TypeScript</span><span>JWT</span>
+        </div>
+        <a href="#" class="proj-link">View on GitHub →</a>
+      </div>
+
+      <div class="glass-card project-card">
+        <div class="proj-top">
+          <span class="proj-cat">Simulation · 3D</span>
+        </div>
+        <h3>Unity Roller Coaster Sim</h3>
+        <p>Physics-based roller coaster in Unity demonstrating motion dynamics and 3D environment interaction.</p>
+        <div class="tags">
+          <span>Unity</span><span>C#</span><span>Physics</span>
+        </div>
+        <a href="#" class="proj-link">View on GitHub →</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <p class="section-label">Contact</p>
+    <h2>Let's Talk</h2>
+    <p class="contact-sub">Open to internships and collaborations. I reply within a day.</p>
+    <div class="contact-cards">
+      <a href="mailto:your@email.com" class="glass-card contact-card">
+        <span class="contact-icon">✉</span>
+        <div>
+          <p class="contact-type">Email</p>
+          <p class="contact-val">your@email.com</p>
+        </div>
+      </a>
+      <a href="https://github.com/harshal1077" target="_blank" class="glass-card contact-card">
+        <span class="contact-icon">⌥</span>
+        <div>
+          <p class="contact-type">GitHub</p>
+          <p class="contact-val">github.com/harshal1077</p>
+        </div>
+      </a>
+      <a href="https://linkedin.com/in/yourlinkedin" target="_blank" class="glass-card contact-card">
+        <span class="contact-icon">in</span>
+        <div>
+          <p class="contact-type">LinkedIn</p>
+          <p class="contact-val">linkedin.com/in/yourlinkedin</p>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Harshal Raut</p>
+  </footer>
+
+  <script>
+    // nav blur on scroll
+    const nav = document.querySelector('nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 30);
+    });
+  </script>
+
+</body>
+</html>    <h2>About Me</h2>
     <div class="about-grid">
       <div>
         <p>
