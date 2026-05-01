@@ -73,12 +73,18 @@ h1 span{
 
 .btn-outline{
   padding:10px 20px;
+  border-radius:999px;
   border:1px solid var(--border);
-  border-radius:20px;
+  color:var(--text);
   text-decoration:none;
-  margin-left:10px;
+  font-size:0.85rem;
+  transition:0.3s;
 }
 
+.btn-outline:hover{
+  background:#eef2ff;
+  border-color:var(--accent);
+}
 /* SECTION */
 section{padding:60px 6vw;}
 
