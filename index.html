@@ -1,113 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Harshal Raut</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Harshal Raut | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
+<!-- NAVBAR -->
 <nav>
   <span class="logo">Harshal Raut</span>
   <ul>
     <li><a href="#about">About</a></li>
     <li><a href="#skills">Skills</a></li>
     <li><a href="#projects">Projects</a></li>
+    <li><a href="#experience">Experience</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
 </nav>
 
+<!-- HERO -->
 <section id="hero">
   <p class="eyebrow">AI & ML Engineer · Palghar, India</p>
   <h1>Hi, I'm <span>Harshal Raut</span></h1>
-  <p class="sub">3rd year CS student at SJCEM building AI and ML systems that solve real problems.</p>
+  <p class="sub">
+    Final-year Computer Engineering student specializing in AI & Machine Learning.
+    I build real-world intelligent systems and scalable applications.
+  </p>
+
   <div class="btns">
     <a href="#projects" class="btn-fill">View Projects</a>
-    <a href="#contact" class="btn-outline">Contact Me</a>
+    <a href="resume.pdf" download class="btn-outline">Download Resume</a>
   </div>
 </section>
 
+<!-- ABOUT -->
 <section id="about">
   <h2>About</h2>
+
   <div class="two-col">
     <div>
-      <p>Computer Engineering student at <strong>SJCEM, Palghar</strong> specializing in AI and ML. I've built a water demand forecasting system, a nutrition AI tool, and a document verification system.</p>
-      <p>Looking for <strong>AI/ML internships</strong> and planning a <strong>Master's abroad</strong> after graduation.</p>
+      <p>
+        I am a Computer Engineering student at <strong>SJCEM, Palghar</strong> specializing in
+        Artificial Intelligence and Machine Learning. I have hands-on experience building
+        end-to-end ML systems and web applications.
+      </p>
+
+      <p>
+        I focus on building practical AI solutions like forecasting systems,
+        document verification tools, and real-time ML applications.
+      </p>
+
+      <p>
+        Currently seeking <strong>AI/ML internships</strong> and planning to pursue
+        a <strong>Master's degree abroad</strong>.
+      </p>
     </div>
+
     <div class="info-box">
       <div class="row"><span>College</span><strong>SJCEM, Palghar</strong></div>
-      <div class="row"><span>Degree</span><strong>B.Tech. Computer Science</strong></div>
-      <div class="row"><span>Year</span><strong>3rd Year</strong></div>
-      <div class="row"><span>Goal</span><strong>Internship + MS Abroad</strong></div>
+      <div class="row"><span>Degree</span><strong>B.E Computer Engineering</strong></div>
+      <div class="row"><span>Specialization</span><strong>AI & ML</strong></div>
+      <div class="row"><span>Goal</span><strong>AI Internship + MS Abroad</strong></div>
     </div>
   </div>
 </section>
 
+<!-- SKILLS -->
 <section id="skills">
   <h2>Skills</h2>
+
   <div class="skill-table">
-    <div class="sk"><span>AI / ML</span><div class="tags"><p>Python</p><p>TensorFlow</p><p>Scikit-learn</p><p>Pandas</p><p>NumPy</p><p>LSTM</p><p>Deep Learning</p></div></div>
-    <div class="sk"><span>Web Dev</span><div class="tags"><p>Angular</p><p>TypeScript</p><p>JavaScript</p><p>HTML</p><p>CSS</p></div></div>
-    <div class="sk"><span>Languages</span><div class="tags"><p>Python</p><p>Java</p><p>C++</p><p>C#</p></div></div>
-    <div class="sk"><span>Tools</span><div class="tags"><p>Git</p><p>GitHub</p><p>VS Code</p><p>Unity</p><p>Linux</p></div></div>
+
+    <div class="sk">
+      <span>AI / ML</span>
+      <div class="tags">
+        <p>Python</p><p>TensorFlow</p><p>Keras</p><p>Pandas</p><p>NumPy</p><p>CNN</p><p>Data Forecasting</p>
+      </div>
+    </div>
+
+    <div class="sk">
+      <span>Web Development</span>
+      <div class="tags">
+        <p>Angular</p><p>TypeScript</p><p>JavaScript</p><p>HTML</p><p>CSS</p>
+      </div>
+    </div>
+
+    <div class="sk">
+      <span>Languages</span>
+      <div class="tags">
+        <p>Python</p><p>Java</p><p>C++</p><p>C</p><p>Kotlin</p>
+      </div>
+    </div>
+
+    <div class="sk">
+      <span>Tools</span>
+      <div class="tags">
+        <p>Git</p><p>GitHub</p><p>VS Code</p><p>Jupyter</p><p>GCP</p><p>Unity</p>
+      </div>
+    </div>
+
   </div>
 </section>
 
+<!-- PROJECTS -->
 <section id="projects">
   <h2>Projects</h2>
+
   <div class="grid">
+
     <div class="card">
       <p class="cat">AI · Forecasting</p>
       <h3>Urban Water Intelligence</h3>
-      <p>Forecasts urban water demand using time-series ML models to help plan infrastructure.</p>
+      <p>AI-based system for forecasting urban water demand using time-series ML models.</p>
       <div class="tags"><p>Python</p><p>LSTM</p><p>Pandas</p></div>
-      <a href="#">GitHub →</a>
     </div>
+
     <div class="card">
-      <p class="cat">AI · Health</p>
+      <p class="cat">AI · Computer Vision</p>
       <h3>Nutri AI</h3>
-      <p>Turns dietary input into personalised health insights using ML and NLP.</p>
-      <div class="tags"><p>Python</p><p>NLP</p><p>ML</p></div>
-      <a href="#">GitHub →</a>
+      <p>Real-time nutritional recognition system using CNN and pose detection.</p>
+      <div class="tags"><p>TensorFlow</p><p>CNN</p><p>Computer Vision</p></div>
     </div>
+
     <div class="card">
-      <p class="cat">AI · Research</p>
-      <h3>Document Verification</h3>
-      <p>Verifies uploaded documents automatically using machine learning.</p>
+      <p class="cat">AI · NLP</p>
+      <h3>Document Verification System</h3>
+      <p>Automated document verification using OCR and NLP techniques.</p>
       <div class="tags"><p>Python</p><p>OCR</p><p>NLP</p></div>
-      <a href="#">GitHub →</a>
     </div>
+
     <div class="card">
-      <p class="cat">Web</p>
-      <h3>Angular Auth System</h3>
-      <p>Secure login with JWT sessions and protected routing.</p>
+      <p class="cat">Web Development</p>
+      <h3>Angular Authentication System</h3>
+      <p>Secure login system with JWT authentication and protected routes.</p>
       <div class="tags"><p>Angular</p><p>TypeScript</p><p>JWT</p></div>
-      <a href="#">GitHub →</a>
     </div>
+
     <div class="card">
-      <p class="cat">3D Simulation</p>
+      <p class="cat">Simulation</p>
       <h3>Unity Roller Coaster</h3>
-      <p>Physics-based simulation in Unity showing motion dynamics.</p>
+      <p>3D simulation demonstrating motion dynamics and physics.</p>
       <div class="tags"><p>Unity</p><p>C#</p></div>
-      <a href="#">GitHub →</a>
     </div>
+
   </div>
 </section>
 
+<!-- EXPERIENCE -->
+<section id="experience">
+  <h2>Experience</h2>
+
+  <div class="exp">
+
+    <div class="exp-card">
+      <h3>Metaverse Development Intern — IOFT</h3>
+      <p>Developed gameplay mechanics, UI systems, and optimized Unity-based applications.</p>
+    </div>
+
+    <div class="exp-card">
+      <h3>Angular Developer Intern — IOFT</h3>
+      <p>Built component-based Angular apps and integrated REST APIs.</p>
+    </div>
+
+    <div class="exp-card">
+      <h3>Software Developer Intern — Tata Steel CRC</h3>
+      <p>Worked with industrial software systems and automation workflows.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
 <section id="contact">
   <h2>Contact</h2>
-  <p class="sub">Open to internships and collaborations. I reply within a day.</p>
+  <p class="sub">Open to AI/ML internships and collaborations.</p>
+
   <div class="contact-list">
-    <a href="mailto:your@email.com"><span>Email</span><strong>rautharshal2005@gmail.com</strong></a>
-    <a href="https://github.com/harshal1077" target="_blank"><span>GitHub</span><strong>github.com/harshal1077</strong></a>
-    <a href="https://linkedin.com/in/yourlinkedin" target="_blank"><span>LinkedIn</span><strong>linkedin.com/in/yourlinkedin</strong></a>
+    <a href="mailto:rautharshal2005@gmail.com">
+      <span>Email</span><strong>rautharshal2005@gmail.com</strong>
+    </a>
+
+    <a href="https://github.com/harshal1077" target="_blank">
+      <span>GitHub</span><strong>github.com/harshal1077</strong>
+    </a>
+
+    <a href="https://linkedin.com/in/harshalraut07" target="_blank">
+      <span>LinkedIn</span><strong>linkedin.com/in/harshalraut07</strong>
+    </a>
   </div>
 </section>
 
-
-
+<footer>
+  <p>© 2026 Harshal Raut</p>
+</footer>
 
 </body>
 </html>
