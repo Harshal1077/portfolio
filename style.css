@@ -4,8 +4,8 @@ html { scroll-behavior: smooth; }
 
 /* ROOT COLORS (iOS STYLE) */
 :root {
-  --bg: #f8fafc;
-  --surface: #ffffff;
+  --bg: #f8fafc;        /* main background */
+  --surface: #ffffff;   /* cards */
   --border: #e2e8f0;
   --text: #0f172a;
   --soft: #64748b;
@@ -16,12 +16,9 @@ html { scroll-behavior: smooth; }
 
 /* BODY */
 body {
-  background: radial-gradient(circle at top, #111119, #07070a);
+  background: var(--bg);
   color: var(--text);
   font-family: 'Inter', sans-serif;
-  font-size: 15px;
-  line-height: 1.7;
-  -webkit-font-smoothing: antialiased;
 }
 
 /* NAVBAR (LIQUID GLASS) */
