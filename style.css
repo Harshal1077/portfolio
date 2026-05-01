@@ -4,17 +4,14 @@ html { scroll-behavior: smooth; }
 
 /* ROOT COLORS (iOS STYLE) */
 :root {
-  --bg: #0b0b0f;
-  --surface: rgba(255,255,255,0.04);
-  --glass: rgba(255,255,255,0.06);
-  --border: rgba(255,255,255,0.08);
-  --text: #f5f5f7;
-  --soft: #8a8aa3;
+  --bg: #f8fafc;
+  --surface: #ffffff;
+  --border: #e2e8f0;
+  --text: #0f172a;
+  --soft: #64748b;
 
-  --accent: #7c7cff;
-  --accent2: #30d5c8;
-
-  --blur: blur(18px);
+  --accent: #6366f1;
+  --accent2: #06b6d4;
 }
 
 /* BODY */
